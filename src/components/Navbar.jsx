@@ -4,6 +4,8 @@ import { laptop, mobile } from '../responsive';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import Logo from '../asset/Naija Shop.png';
+import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     height: 60px;
@@ -59,18 +61,31 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    ${mobile({flex: "2", justifyContent: "center" })}
+    ${mobile({flex: "2", justifyContent: "center", marginLeft: "-15px", marginRight: "-35px" })}
     ${laptop({padding: "0px 30px" })} 
 `
 
 const MenuItem = styled.div`
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    color: #1ed791;
     margin-left: 25px;
-    ${mobile({fontSize: "12px", marginLeft: "10px" })} 
+    ${mobile({fontSize: "10px", marginLeft: "8px" })}
+    ${laptop({marginLeft: "15px" })}
+    
+    &:hover {
+        padding: 10px 20px;
+        background: linear-gradient(66deg, rgba(26,215,143,0.9808298319327731) 41%, rgba(0,212,255,1) 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.5s ease;
+    }
 `
 
 const Navbar = () => {
+    const quantity = useSelector(state=>state.cart.quantity)
     return (
         <Container>
             <Wrapper>
@@ -82,16 +97,24 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
+                    <Link to="/">
                     <Image src={Logo} alt="Naija Shop" />
+                    </Link>
                 </Center>
                 <Right>
+                    <Link to="/register" style={{textDecoration: "none"}}>
                     <MenuItem>REGISTER</MenuItem>
+                    </Link>
+                    <Link to="/login" style={{textDecoration: "none"}}>
                     <MenuItem>SIGN IN</MenuItem>
+                    </Link>
+                    <Link to="/cart">
                     <MenuItem>
-                        <Badge badgeContent={4} color="primary">
+                        <Badge badgeContent={quantity} color="primary">
                             <ShoppingCartOutlined />
                         </Badge>
                     </MenuItem>
+                    </Link>
                 </Right>
             </Wrapper>
         </Container>

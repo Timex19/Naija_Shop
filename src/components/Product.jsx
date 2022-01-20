@@ -1,4 +1,5 @@
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
+import { FavoriteBorderOutlined, VisibilityOutlined, ShoppingCartOutlined } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Info = styled.div`
@@ -20,7 +21,7 @@ const Info = styled.div`
 const Container = styled.div`
     flex: 1;
     margin: 5px;
-    min-width: 280px;
+    min-width: 300px;
     height: 350px;
     display: flex;
     align-items: center;
@@ -56,6 +57,7 @@ const Icon = styled.div`
     justify-content: center;
     margin: 10px;
     transition: all 0.5s ease;
+
     &:hover {
         background: rgb(26,215,143);
         background: linear-gradient(66deg, rgba(26,215,143,0.9808298319327731) 41%, rgba(0,212,255,1) 100%);
@@ -71,13 +73,19 @@ const Product = ({item}) => {
             <Image src={item.img} />
             <Info>
                 <Icon>
+                    <Link to={`/product/${item._id}`} style={{color: "black"}}>
                     <ShoppingCartOutlined />
+                    </Link>
                 </Icon>
                 <Icon>
-                    <SearchOutlined />
+                    <Link to={`/product/${item._id}`} style={{color: "black"}}>
+                    <VisibilityOutlined />
+                    </Link>
                 </Icon>
                 <Icon>
+                    <Link to={`/product/${item._id}`} style={{color: "black"}}>
                     <FavoriteBorderOutlined />
+                    </Link>
                 </Icon>
             </Info>
         </Container>

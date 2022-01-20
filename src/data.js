@@ -5,6 +5,7 @@ export const sliderItems = [
         title: "SUMMER SALE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "89c1fa",
+        cat: "Womens_Shirt"
     },
     {
         id: 2,
@@ -12,13 +13,15 @@ export const sliderItems = [
         title: "AUTUMN COLLECTION",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "8898a8",
+        cat: "Mens_Suit"
     },
     {
         id: 3,
-        img: "https://i.ibb.co/JkDRPzG/background-2.png",
+        img: "https://i.ibb.co/yVfJtYk/background-6.png",
         title: "LOUNGE WEAR LOVE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-        bg: "fad7d7",
+        bg: "faef8c",
+        cat: "Womens_Shirt"
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ export const sliderItems = [
         title: "POPULAR SALE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fa8989",
+        cat: "Womens_Dress" 
     },
 ];
 
@@ -34,16 +38,19 @@ export const categories = [
         id: 1,
         img: "https://i.ibb.co/HnF7wj1/isaac-ramirez-UNSj7-Bt-OK0-Q-unsplash.jpg", 
         title: "LIGHT JACKETS",
+        cat: "Jacket"
     },
     {
         id: 2,
         img: "https://i.ibb.co/WWv27Hk/Women-dress.jpg", 
         title: "LOUNGEWEAR LOVE",
+        cat: "Womens_Dress"
     },
     {
         id: 3,
         img: "https://i.ibb.co/nL9ZzQj/Purple-T-shirt-2.jpg", 
         title: "SHIRT STYLE",
+        cat: "T-Shirt"
     },
 ];
 
