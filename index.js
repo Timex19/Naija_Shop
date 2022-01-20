@@ -28,6 +28,6 @@ app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
-app.listen(process.env.PORT || naija-shop.herokuapp.com, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server is running!");
 });
