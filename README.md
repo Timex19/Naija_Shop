@@ -1,7 +1,7 @@
 ## 🛍️ Simple E-commerce Web Application
 
 <p align="center">
-  <img src="https://i.ibb.co/sWVB3Cy/Naija-Shop.gif">
+  <img src="./src/asset/Naija-Shop.gif">
 </p>
 
 ## Basic Overview - [Live Demo]()
