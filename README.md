@@ -1,7 +1,7 @@
 ## 🛍️ Simple E-commerce Web Application
 
 <p align="center">
-  <img src="./src/asset/Naija-Shop.gif" width="800" height="400">
+  <img src="./src/asset/Naija-Shop.gif">
 </p>
 
 ## Basic Overview - [Live Demo](https://naijashop.netlify.com)
