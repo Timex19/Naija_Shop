@@ -4,7 +4,7 @@
   <img src="./src/asset/Naija-Shop.gif" width="800" height="400">
 </p>
 
-## Basic Overview - [Live Demo]()
+## Basic Overview - [Live Demo](https://naijashop.netlify.com)
 
 This simple E-Commerce website shows how React components and Redux can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 
