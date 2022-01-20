@@ -71,10 +71,12 @@ const Product = styled.div`
 const ProductDetail = styled.div`
     flex: 2;
     display: flex;
+    ${mobile({padding: "10px", flexDirection: "column", alignItems: "center", justifyContent: "center",})}
 `;
 
 const Image = styled.img`
     width: 200px; 
+    ${mobile({width: "150px"})}
 `;
 
 const Details = styled.div`
