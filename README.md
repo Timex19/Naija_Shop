@@ -27,16 +27,13 @@ This simple E-Commerce website shows how React components and Redux can be used 
 ```javascript
 
 /* First, Install the needed packages */
-npm install
+yarn install
 
 /* Then start both Node and React */
-npm start
+yarn start
 
 /* To run the tests */
-npm run test
-
-/* Running e2e tests */
-npm run wdio
+yarn run test
 
 
 ```
@@ -55,7 +52,7 @@ The MIT License (MIT). Please see License File for more information.
 <br/>
 <br/>
 
-<p align="center"><img src="https://avatars.githubusercontent.com/u/88297303?v=4" width="35" height="35"/></p>
-<p align="center">
-<sub>A little project by <a href="http://www.github.com/timex19">Ojo Timilehin Joseph</a></sub>
-</p>
+<p align="center"><img src="https://avatars.githubusercontent.com/u/88297303?v=4" width="60" height="60"/></p>
+<h4 align="center">
+  A little project by <a href="http://www.github.com/timex19">Ojo Timilehin Joseph</a>
+</h4>
