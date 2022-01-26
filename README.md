@@ -1,4 +1,4 @@
-## 🛍️ Simple E-commerce Web Application
+## 🛍️ Simple E-commerce Web Application [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/timex19/Naija_Shop/blob/main/LICENSE.md)
 
 <p align="center">
   <img src="./src/asset/Naija-Shop.gif" width="500" height="250">
