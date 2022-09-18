@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://naija-shop.herokuapp.com/api/";
+const BASE_URL = "https://naijashop-production.up.railway.app/api/";
 //const TOKEN = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
 
 const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
